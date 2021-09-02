@@ -45,5 +45,5 @@ def main():
     while True: 
         bot.ask() # bot asks the user for input
 
-if __name__ == "__main__":
+if __name__ == "__main__": # run the program if this is the main file
     main()
