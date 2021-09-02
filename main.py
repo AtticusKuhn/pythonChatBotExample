@@ -36,13 +36,13 @@ class Bot:
         if newMode.name != self.mode.name: # if the old mode is different from the new mode, we are changing modes
             n: Mode = newMode()
             n.init() # tell the user we are changing modes
-        self.mode = newMode
+        self.mode = newMode # set the new mode
 
 # the main function is what is run when the program is started
 def main():
-    printHello()
-    bot = Bot(modes)
-    while True:
+    printHello() # print a welcome message to welcome the user
+    bot = Bot(modes) # create the chat bot
+    while True: 
         bot.ask() # bot asks the user for input
 
 if __name__ == "__main__":

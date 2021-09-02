@@ -40,7 +40,7 @@ class MainMode(Mode):
     def __init__(self):
         self.prompt = "main mode"
         self.name="main"
-    def handleInput(self, i, modes):
+    def handleInput(self, i, modes: List[Mode]) -> Mode:
         if i == "help":
             print('''hello my name is PHP (python helper person), and I can help you. I have several modes 
      and I am designed to be the ideal chatbot and personal assistant. To see what I can do,
@@ -69,4 +69,4 @@ class Calculator(Mode):
     def init(self):
         print("the calculator is good for simple calculations")
 #compile the modes into a list for exporting
-modes = [MainMode, Calculator]
+modes: List[Mode] = [MainMode, Calculator]
