@@ -3,8 +3,7 @@
 
 #Import Dependencies
 from typing import List
-from modes import Mode
 
 # given modes and a mode name, goto that mode with the name
-def goto(modes: List[Mode], name: str) -> Mode:
+def goto(modes, name: str):
     return list(filter(lambda x: x.name ==name, modes))[0]
