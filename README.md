@@ -8,7 +8,8 @@ The best way to learn programming is not to see syntax on a slideshow, but inste
 to experiment and play with the features in a project. This template is intended
 for beginner to mid lever Python learners to use with project-based learning. By
 customizing this chatbot and adding more features, the beginner will learn more
-about python by using it. 
+about python by using it. This project is intentionally not in a finished state because the
+goal is to get beginners to finish it, so it is in a starter state.
 # Example Output
 here is some sample output
 ```
