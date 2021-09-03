@@ -4,8 +4,8 @@
 
 # import needed libraries
 from typing import List
-from modes import Mode, modes
-
+from modes.baseMode import Mode
+from modes.index import modes
 
 
 
@@ -20,16 +20,16 @@ class Bot:
         Print help text to inform the user about this project
         '''
         print(
-    ''' ________  ___  ___  ________   
-    |\   __  \|\  \|\  \|\   __  \  
-    \ \  \|\  \ \  \\\  \ \  \|\  \ 
-    \ \   ____\ \   __  \ \   ____\\
-    \ \  \___|\ \  \ \  \ \  \___|
-    \ \__\    \ \__\ \__\ \__\   
-        \|__|     \|__|\|__|\|__|  
-        hello my name is PHP (python helper person), and I can help you. I have several modes 
-        and I am designed to be the ideal chatbot and personal assistant. To see what I can do,
-        type "help", and to find some calculations, type "calc".''')
+''' ________  ___  ___  ________   
+|\   __  \|\  \|\  \|\   __  \  
+\ \  \|\  \ \  \\\  \ \  \|\  \ 
+\ \   ____\ \   __  \ \   ____\\
+\ \  \___|\ \  \ \  \ \  \___|
+\ \__\    \ \__\ \__\ \__\   
+\|__|     \|__|\|__|\|__|  
+hello my name is PHP (python helper person), and I can help you. I have several modes 
+and I am designed to be the ideal chatbot and personal assistant. To see what I can do,
+    type "help", and to find some calculations, type "calc".''')
     def ask(self):
         '''
         bot asks the user for input
