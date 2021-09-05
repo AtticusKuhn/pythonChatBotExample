@@ -8,6 +8,7 @@ from modes.baseMode import Mode
 from modes.index import modes
 
 class Bot:# A class to represent the bot and its state
+    name = "php"
     def  __init__(self, modes: List[Mode]):
         self.modes =  modes
         self.mode = modes[0] # modes[0] is the default mode
@@ -32,7 +33,7 @@ and I am designed to be the ideal chatbot and personal assistant. To see what I 
         bot asks the user for input
         '''
         m: Mode = self.mode()
-        i = input(m.prompt+ "> ") # Prompt the user for input
+        i = input(f'{self.name}: {m.prompt}>') # Prompt the user for input
         newMode = m.handleInput(i, self.modes)
         if newMode.name != self.mode.name: # if the old mode is different from the new mode, we are changing modes
             n: Mode = newMode()

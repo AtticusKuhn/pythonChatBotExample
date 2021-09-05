@@ -1,6 +1,6 @@
 from utils import goto
 
-# the base mode class 
+# the base mode class. THe base mode is never instantiated, but is extended by other classes
 class Mode:
     def __init__ (self):
         print("init mode")

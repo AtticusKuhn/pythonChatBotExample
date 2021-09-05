@@ -1,7 +1,8 @@
 from typing import List
 from modes.baseMode import Mode
 from utils import goto
-# the main mode, the mode the user is put into on startup
+# the main mode, the mode the user is put into on startup. The user can go to other modes
+# from here
 class MainMode(Mode):
     prompt = "main mode"
     name = "main"
