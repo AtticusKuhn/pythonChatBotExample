@@ -11,7 +11,7 @@ from modes.index import modes # the list of modes
 def main():# the main function is what is run when the program is started
     bot = Bot(modes) # create the chat bot
     bot.printHello()  # print a welcome message to welcome the user
-    while True: 
+    while True:  # make the bot run forever
         bot.ask() # bot asks the user for input
 
 if __name__ == "__main__": # run the program if this is the main file
